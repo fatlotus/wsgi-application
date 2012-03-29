@@ -1,0 +1,19 @@
+application: minecraft-party
+runtime: python27
+version: production
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /politburo(/.*)?
+  login: admin
+  script: admin.handle
+- url: /([a-zA-Z0-9]{6})
+  script: private.handle
+- url: /(.+)\.(jpg|jpeg|png|gif)
+  static_files: \1.\2
+  upload: (.+)\.(jpg|jpeg|png|gif)
+- url: /bebas
+  static_dir: bebas
+- url: /
+  script: default.handle

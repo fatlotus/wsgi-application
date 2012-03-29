@@ -1,0 +1,1 @@
+PAGE = '<h1>Politburo</h1><form method="post" action="/politburo/setup"><input type="submit" value="Perform One-time Setup"/></form><form method="post" action="/politburo/print"><input type="submit" value="Prepare Handouts"/></form>'

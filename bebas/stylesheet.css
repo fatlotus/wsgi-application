@@ -1,0 +1,12 @@
+/* Courtesy of Font Squirrel */
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('Bebas.eot');
+    src: url('Bebas.eot?#iefix') format('embedded-opentype'),
+         url('Bebas.woff') format('woff'),
+         url('Bebas.ttf') format('truetype'),
+         url('Bebas.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
