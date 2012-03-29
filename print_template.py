@@ -16,8 +16,8 @@ ul li code{font:13px Monaco,monospace;}
 </div>
 <script type='text/javascript'>
 window.onload = function() {
-	window.print();
-	window.location.href = '/politburo';
+  window.print();
+  window.location.href = '/politburo';
 }
 </script>
 """
@@ -30,8 +30,8 @@ EACH_PAGE = """
 """
 
 def render_page(people):
-	ul = '\n'.join(['<li>%s (<code>%s</code>)</li>' % person for person in people])
-	
-	chunks = [ FRONT.replace("%{UL}%", ul) ] + [ EACH_PAGE.replace('%{URL}%', person[1]) for person in people ]
-	
-	return str(''.join(chunks))
+  ul = '\n'.join(['<li>%s (<code>%s</code>)</li>' % person for person in people])
+  
+  chunks = [ FRONT.replace("%{UL}%", ul) ] + [ EACH_PAGE.replace('%{URL}%', person[1]) for person in people ]
+  
+  return str(''.join(chunks))
